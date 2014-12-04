@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Developers</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="pro">
+	<!-- Date: 2014-09-24 -->
+</head>
+<body>
+     <center><h1>基于Art的虚拟机壳</h1></center>
+     <h3>项目方案：</h3>
+     <li>替换apk中的dex文件为oat文件</li>  
+     <br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;具体实现：先把一个apk文件运行在一个art平台上，提取运行后的oat文件，然后把oat替换原来apk包中的dex文件，重新打包成apk，看能否运行；(<font color="red">正在进行中......</font>)
+     <br>
+     <br>
+   <li>伪指令替换原指令，定制虚拟机运行</li>
+   <br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;用编译器llvm将dex编译成一套伪指令的oat文件，然后定制一个自己的art虚拟机来解释这种伪指令的oat文件；
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div><img src="art.png" width="600px" height="150px"/></div>
+   <br>
+   <br>
+  <li></li>
+    </body>
+  </html>
