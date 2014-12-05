@@ -12,16 +12,26 @@
 <body>
      <center><h1>基于Art的虚拟机壳</h1></center>
      <h3>项目方案：</h3>
-     <li>替换apk中的dex文件为oat文件</li>  
+     <li>1.替换apk中的dex文件为oat文件</li>  
      <br>
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;具体实现：先把一个apk文件运行在一个art平台上，提取运行后的oat文件，然后把oat替换原来apk包中的dex文件，重新打包成apk，看能否运行；<br>
      <font color="red" >Error:<img src="art_error.png" width="200px" height="20px"/></font>
+      <br>
+     <font color="blue">安装失败原因探索：</font>结合源码查看安装期的过程(<font color="red">正在进行中......</font>)
+      <br>
+     <br>
+   <li>2.art下的动态加载</li>
+   <br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;dalvik模式下的动态加载加载的是一个dex文件，那么如果在art模式下，动态加载dex还可以吗，貌似不行，因为art模式下，dex文件在安装的时候被编译成了art指令，这时候如果再加载一个dex，除非系统能够自动把这个dex编译成art，否则应该是执行不了的，那么就需要人工地去编译dex成为art文件，然后再把这个art文件放在apk中，这样运行的时候应该就能做到动态加载了
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div><img src="" width="" height=""/></div>
+ 
      <br>
      <br>
-   <li>伪指令替换原指令，定制虚拟机运行</li>
+   <li>3.伪指令替换原指令，定制虚拟机运行</li>
    <br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;用编译器llvm将dex编译成一套伪指令的oat文件，然后定制一个自己的art虚拟机来解释这种伪指令的oat文件；
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div><img src="art.png" width="600px" height="150px"/></div>
+
    <br>
    <br>
   <li></li>
