@@ -17,7 +17,11 @@
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;具体实现：先把一个apk文件运行在一个art平台上，提取运行后的oat文件，然后把oat替换原来apk包中的dex文件，重新打包成apk，看能否运行；<br>
      <font color="red" >Error:<img src="art_error.png" width="200px" height="20px"/></font>
       <br>
-     <font color="blue">安装失败原因探索：</font>结合源码查看安装期的过程(<font color="red">正在进行中......</font>)
+     <font color="blue">安装失败原因探索：<br>
+     	/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java源码中存在这样一段验证:<br>
+     	<img src="art_error_reason.png" width="500px" height="100px"/>
+     </font><br>
+     从这个结果看来，apk中必须存在一个dex文件，否则无法无法绕过这段框架的代码而抛出异常；
       <br>
      <br>
    <li>2.art下的动态加载</li>
