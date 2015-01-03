@@ -1,0 +1,386 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+margin:0 auto;
+padding:0;
+color:#333;
+}
+
+div,form,ul,li,ol,dl,dt,dd,img{
+padding:0;
+margin:0;
+list-style:none;
+border:none
+}
+
+h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+font-size:12px;
+font-weight:normal
+}
+input,button,textarea,select{
+font:100% Arial,'arial';}
+
+a{
+color:#333;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+outline:none;
+font-size:12px;
+outline:none;blr:expression(this.onFocus=this.blur());
+}
+a:hover{
+color:#005db5;
+}
+.head{color:#0071d0}
+.head a{color:#0071d0}
+.nav{background:url("../images/index_04-05.jpg"/*tpa=http://www.sz-windrive.com/images/index_04-05.jpg*/) repeat-x; height:40px}
+.nav li{float:left; width:110px; text-align:center; line-height:36px; height:40px}
+.nav li.fg{width:2px}
+.nav li a{color:#fff; font-family:"微软雅黑"; font-size:14px}
+.news {padding:10px 10px}
+.news li{line-height:21px; background:url("../images/index_29-18.jpg"/*tpa=http://www.sz-windrive.com/images/index_29-18.jpg*/) no-repeat left center; padding-left:15px}
+.news li a{color:#666}
+.news li a:hover{color:#005db5;}
+
+
+
+
+.rollBox img{border:none;}
+.rollBox{width:290px;overflow:hidden;margin:0 auto;}
+.rollBox .Cont{width:258px;overflow:hidden;margin:0 auto; text-align:center}
+.rollBox .ScrCont{width:10000000px;}
+.rollBox .Cont .pic{width:190px;float:left; padding:20px 0 20px 34px}
+*+html .rollBox .Cont .pic{width:190px;float:left;text-align:center}
+.rollBox .Cont .pic img{display:block;margin:0 auto}
+.rollBox #List1,.rollBox #List2{float:left;}
+.img1,.img2,.Cont{
+float:left;}
+.img1,.img2{
+width:16px;
+height:194px;
+display:block;
+cursor:pointer;
+
+}
+.img1{
+	background-image:url("../images/index_29.jpg"/*tpa=http://www.sz-windrive.com/images/index_29.jpg*/);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	}
+.img2{
+	background-image:url("../images/index_29-16.jpg"/*tpa=http://www.sz-windrive.com/images/index_29-16.jpg*/);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+}
+
+
+
+.left1{background:url("../images/ny_03.jpg"/*tpa=http://www.sz-windrive.com/images/ny_03.jpg*/) no-repeat; width:200px; height:26px; line-height:26px; text-indent:15px; font-weight:bold}
+.left2{background:url("../images/ny_06.jpg"/*tpa=http://www.sz-windrive.com/images/ny_06.jpg*/) repeat-x #fff; border:1px solid #cbcbcb; border-width:0 1px 0 1px}
+.left2 td{border-bottom:1px dashed #ccc}
+.left3{background:url("../images/ny_14.jpg"/*tpa=http://www.sz-windrive.com/images/ny_14.jpg*/) repeat-x #fff; border:1px solid #cbcbcb; border-width:0 1px 0 1px}
+.leftlb{color:#087dc3}
+.leftlb a{display:block; height:25px; width:180px ; line-height:25px; font-family:"宋体"; }
+.leftlb a:hover{display:block; height:25px; width:180px; background:#ecfdff }
+.left2 td.dq a{display:block; height:25px; width:180px; background:#ecfdff }
+.mbx{color:#999; padding-right:10px}
+
+
+
+/*CSS sabrosus style pagination*/
+
+DIV.sabrosus {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+DIV.sabrosus A {
+	BORDER-RIGHT: #9aafe5 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #9aafe5 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9aafe5 1px solid; COLOR: #2e6ab1; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #9aafe5 1px solid; TEXT-DECORATION: none
+}
+DIV.sabrosus A:hover {
+	BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+DIV.pagination A:active {
+	BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+DIV.sabrosus SPAN.current {
+	BORDER-RIGHT: navy 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: navy 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; BORDER-LEFT: navy 1px solid; COLOR: #fff; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: navy 1px solid; BACKGROUND-COLOR: #2e6ab1
+}
+DIV.sabrosus SPAN.disabled {
+	BORDER-RIGHT: #929292 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #929292 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #929292 1px solid; COLOR: #929292; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #929292 1px solid
+}
+
+
+.bg a{background:url("../images/06.jpg"/*tpa=http://www.sz-windrive.com/images/06.jpg*/) no-repeat; width:180px; height:140px; display:block}
+.bg a:hover{background:url("../images/05.jpg"/*tpa=http://www.sz-windrive.com/images/05.jpg*/) no-repeat; width:180px; height:140px; display:block}
+
+.pro:hover{background:#e3f3f8}
+
+table.a a{font-size:14px; font-weight:bold}
+table.a a:hover{color:#0098a2; text-decoration:underline}
+
+.divg div{ padding:10px 0}
+body {
+    color: #333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0;
+}
+div, form, ul, li, ol, dl, dt, dd, img {
+    border: medium none;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+input, button, textarea, select {
+    font: 100% Arial,"arial";
+}
+a {
+    color: #333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #005db5;
+}
+.head {
+    color: #0071d0;
+}
+.head a {
+    color: #0071d0;
+}
+.nav {
+    background: url("../images/index_04-05.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 40px;
+}
+.nav li {
+    float: left;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    width: 110px;
+}
+.nav li.fg {
+    width: 2px;
+}
+.nav li a {
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.news {
+    padding: 10px;
+}
+.news li {
+    background: url("../images/index_29-18.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+    line-height: 21px;
+    padding-left: 15px;
+}
+.news li a {
+    color: #666;
+}
+.news li a:hover {
+    color: #005db5;
+}
+.rollBox img {
+    border: medium none;
+}
+.rollBox {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 290px;
+}
+.rollBox .Cont {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 258px;
+}
+.rollBox .ScrCont {
+    width: 1e+7px;
+}
+.rollBox .Cont .pic {
+    float: left;
+    padding: 20px 0 20px 34px;
+    width: 190px;
+}
+* + html .rollBox .Cont .pic {
+    float: left;
+    text-align: center;
+    width: 190px;
+}
+.rollBox .Cont .pic img {
+    display: block;
+    margin: 0 auto;
+}
+.rollBox #List1, .rollBox #List2 {
+    float: left;
+}
+.img1, .img2, .Cont {
+    float: left;
+}
+.img1, .img2 {
+    cursor: pointer;
+    display: block;
+    height: 194px;
+    width: 16px;
+}
+.img1 {
+    background-image: url("../images/index_29.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.img2 {
+    background-image: url("../images/index_29-16.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.left1 {
+    background: url("../images/ny_03.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 15px;
+    width: 200px;
+}
+.left2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/ny_06.jpg") repeat-x scroll 0 0 #fff;
+    border-color: #cbcbcb;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px;
+}
+.left2 td {
+    border-bottom: 1px dashed #ccc;
+}
+.left3 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/ny_14.jpg") repeat-x scroll 0 0 #fff;
+    border-color: #cbcbcb;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px;
+}
+.leftlb {
+    color: #087dc3;
+}
+.leftlb a {
+    display: block;
+    font-family: "宋体";
+    height: 25px;
+    line-height: 25px;
+    width: 180px;
+}
+.leftlb a:hover {
+    background: none repeat scroll 0 0 #ecfdff;
+    display: block;
+    height: 25px;
+    width: 180px;
+}
+.left2 td.dq a {
+    background: none repeat scroll 0 0 #ecfdff;
+    display: block;
+    height: 25px;
+    width: 180px;
+}
+.mbx {
+    color: #999;
+    padding-right: 10px;
+}
+DIV.sabrosus {
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+}
+DIV.sabrosus A {
+    border-color: #9aafe5;
+    border-right: 1px solid #9aafe5;
+    border-style: solid;
+    border-width: 1px;
+    color: #2e6ab1;
+    margin-right: 2px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+DIV.sabrosus A:hover {
+    background-color: lightyellow;
+    border-color: #2b66a5;
+    border-right: 1px solid #2b66a5;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+}
+DIV.pagination A:active {
+    background-color: lightyellow;
+    border-color: #2b66a5;
+    border-right: 1px solid #2b66a5;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+}
+DIV.sabrosus SPAN.current {
+    background-color: #2e6ab1;
+    border-color: navy;
+    border-right: 1px solid navy;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 2px 5px;
+}
+DIV.sabrosus SPAN.disabled {
+    border-color: #929292;
+    border-right: 1px solid #929292;
+    border-style: solid;
+    border-width: 1px;
+    color: #929292;
+    margin-right: 2px;
+    padding: 2px 5px;
+}
+.bg a {
+    background: url("../images/06.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 140px;
+    width: 180px;
+}
+.bg a:hover {
+    background: url("../images/05.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 140px;
+    width: 180px;
+}
+.pro:hover {
+    background: none repeat scroll 0 0 #e3f3f8;
+}
+table.a a {
+    font-size: 14px;
+    font-weight: bold;
+}
+table.a a:hover {
+    color: #0098a2;
+    text-decoration: underline;
+}
+.divg div {
+    padding: 10px 0;
+}
