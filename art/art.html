@@ -34,7 +34,7 @@
   在art模式下运行了下，还是可以运行的，所以这里暂时猜测有两种可能：<br>
   1.在动态加载dex的过程中对dex做了一个即时编译，编译成oat文件后再由art虚拟机来运行<br>
   2.在动态加载的过程中做的不是即时编译，而是对dex的解释，也就是art虚拟机中其实还保留了一部分对dex解释的功能<br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.阅读源码，查看art模式下动态加载机制，验证上述的可能性(<font color="red">正在进行中......</font>)<br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.阅读源码，查看art模式下动态加载机制，验证上述的可能性<br>
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font color="blue">测试结果：在执行动态加载的过程中对dex文件做了一个优化而变成oat文件，见下面的源码
  (源码路径:/art/runtime/class_linker.cc</font>)<br>
  	<img src="dex2oat1.png" width="700px" height="100px"/><br>
@@ -44,6 +44,9 @@
      <br>
      c.实现动态加载oat(<font color="red">正在进行中......</font>)<br>
      <img src="art_load.png" width="1000px" height="450px"/>
+     d.动态加载oat文件在4.4.2和5.0上都已经成功，现在开始下一步，执行oat文件，怎么样让加载进来地oat开始执行呢，因为之前已经有一个oat<br>
+     在跑了，现在想要执行另一个oat，那么这就是动态加载的一个过程了，怎么样执行我加载进去的一个oat呢，可能要替换某些东西？？？<br>
+     （(<font color="red">正在进行中......</font>)）
    <li>3.伪指令替换原指令，定制虚拟机运行</li>
    <br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;用编译器llvm将dex编译成一套伪指令的oat文件，然后定制一个自己的art虚拟机来解释这种伪指令的oat文件；
